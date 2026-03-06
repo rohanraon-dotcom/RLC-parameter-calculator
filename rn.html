@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> R- Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<script src="script.js" defer></script>
+<body>
+
+<div class="container">
+    <h2>Resonance Calculator</h2>
+    <p class="subtitle">RLC Parameter Calculator</p>
+
+    <label>Inductance (L in Henry)</label>
+    <input type="number" id="L" placeholder="Enter L">
+
+    <label>Capacitance (C in Farad)</label>
+    <input type="number" id="C" placeholder="Enter C">
+
+    <label>Lower Cut-off Frequency (f1 in Hz)</label>
+    <input type="number" id="f1" placeholder="Enter f1">
+
+    <label>Upper Cut-off Frequency (f2 in Hz)</label>
+    <input type="number" id="f2" placeholder="Enter f2">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="output">
+        <p id="Frequency">Resonant Frequency: </p>
+        <p id="bandwidth">Bandwidth: </p>
+        <p id="Quality">Quality Factor: </p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
